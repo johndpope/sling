@@ -11,6 +11,11 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+#ifdef __APPLE__
+#def DISABLE_DASHBOARD
+#endif
+
+#ifndef DISABLE_DASHBOARD
 
 #include "sling/util/elf-writer.h"
 
@@ -292,4 +297,4 @@ void Elf::Buffer::Update() {
 }
 
 }  // namespace sling
-
+#endif

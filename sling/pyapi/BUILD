@@ -33,7 +33,7 @@ cc_library(
     "//sling/file",
     "//sling/file:recordio",
     "//sling/frame",
-    "//sling/http:http-server",
+
     "//sling/nlp/document",
     "//sling/nlp/wiki:phrase-table",
     "//sling/nlp/document:document-tokenizer",
@@ -41,7 +41,7 @@ cc_library(
     "//sling/nlp/document:phrase-tokenizer",
     "//sling/nlp/kb:calendar",
     "//sling/nlp/parser",
-    "//sling/task:dashboard",
+
     "//sling/task:job",
     "//sling/task:process",
     "//sling/stream:file",

@@ -15,6 +15,12 @@
 #ifndef SLING_UTIL_ELF_WRITER_
 #define SLING_UTIL_ELF_WRITER_
 
+#ifdef __APPLE
+#def DISABLE_DASHBOARD
+#endif
+
+#ifdef DISABLE_DASHBOARD
+
 #include <elf.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -22,6 +28,7 @@
 
 #include <string>
 #include <vector>
+
 
 namespace sling {
 
@@ -141,3 +148,5 @@ class Elf {
 }  // namespace sling
 
 #endif  // SLING_UTIL_ELF_WRITER_
+
+#endif
